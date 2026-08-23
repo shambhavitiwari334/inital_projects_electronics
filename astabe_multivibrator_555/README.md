@@ -1,4 +1,4 @@
-# Astable Multivibrator using 555 Timer IC (Analog — No Code)
+# Astable Multivibrator using 555 Timer IC
 
 ## What it does
 A transistor-based astable multivibrator circuit that generates a continuous 
