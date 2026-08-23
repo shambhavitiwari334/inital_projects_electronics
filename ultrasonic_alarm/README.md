@@ -18,6 +18,23 @@ threshold — giving proportional, distance-aware feedback rather than a single 
 
 ## Code
 See [ultrasonic_alarm.ino](./ultrasonic_distance_alarm.ino)
+// Measure distance using HC-SR04
+long duration = pulseIn(echoPin, HIGH, 30000);
+float distance = duration * 0.034 / 2;
+
+// Distance-dependent alarm
+if (distance > 20) {
+    digitalWrite(ledPin, LOW);
+    noTone(buzzerPin);
+}
+else if (distance >= 10) {
+    digitalWrite(ledPin, HIGH);
+    tone(buzzerPin, 1000);   // Caution: lower-pitched tone
+}
+else {
+    digitalWrite(ledPin, HIGH);
+    tone(buzzerPin, 2000);   // Danger: higher-pitched tone
+}
 
 ## What I learned
 - Measuring distance via pulse duration (pulseIn())
