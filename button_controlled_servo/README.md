@@ -15,6 +15,10 @@ on each press (0° → 90° → 0°...).
 
 ## Code
 See [servo_button.ino](./servo_motor.ino)
+if (lastButtonState == HIGH && currentButtonState == LOW) {
+    myServo.write(servoAt90 ? 0 : 90);
+    servoAt90 = !servoAt90;
+}
 
 ## What I learned
 - Controlling servo angle with the Servo library
