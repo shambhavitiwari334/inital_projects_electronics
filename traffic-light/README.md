@@ -16,6 +16,17 @@ Unlike a basic delay()-based version, this uses a hardware interrupt
 
 ## Code
 See [traffic_light.ino](./traffic_light.ino)
+// Timer 1 generates an interrupt every 1 second
+OCR1A = 15624;
+TCCR1B |= (1 << WGM12);
+TCCR1B |= (1 << CS12) | (1 << CS10);
+TIMSK1 |= (1 << OCIE1A);
+
+// Interrupt Service Routine
+ISR(TIMER1_COMPA_vect)
+{
+  seconds++;
+}
 
 ## What I learned
 - Difference between polling/delay() based timing and interrupt-driven timing
