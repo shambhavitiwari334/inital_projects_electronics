@@ -2,8 +2,8 @@
 
 ## What it does
 A transistor-based astable multivibrator circuit that generates a continuous 
-square wave output, causing an LED to blink (turn ON and OFF rapidly). Fully analog — 
-no microcontroller or programming involved. Built during first-year coursework.
+square wave output, causing an LED to blink (turn ON and OFF rapidly). Fully analog.
+No microcontroller or programming was involved. Built during first-year coursework.
 
 ## Components
 - NE555 Timer IC (DIP-8) along with base
