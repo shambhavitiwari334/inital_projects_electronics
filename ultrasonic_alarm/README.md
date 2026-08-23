@@ -9,7 +9,8 @@ threshold — giving proportional, distance-aware feedback rather than a single 
 ## Components
 - Arduino Uno
 - HC-SR04 ultrasonic sensor
-- Buzzer
+- Piezo Buzzer
+- LED (Red) for visual indication
 
 ## Circuit
 ![circuit screenshot](./ultrasonic_distance_alarm.png)
