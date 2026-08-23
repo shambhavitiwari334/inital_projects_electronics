@@ -15,7 +15,7 @@ Unlike a basic delay()-based version, this uses a hardware interrupt
 [View simulation on Tinkercad](https://www.tinkercad.com/things/0gxtM7LQkMI-traffic-light-timer-version)
 
 ## Code
-See [traffic_light.ino](./traffic_light_timer_version.ino)
+See [traffic_light.ino](./traffic_light.ino)
 
 ## What I learned
 - Difference between polling/delay() based timing and interrupt-driven timing
